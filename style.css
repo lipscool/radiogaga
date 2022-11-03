@@ -1,0 +1,421 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100vh;
+    box-sizing: inherit;
+}
+
+#mainsection {
+    text-align: center;
+}
+
+#containertabs {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    justify-content: space-between;
+    margin-right: 800px;
+}
+
+.btn {
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(51, 102, 204);
+    border-radius: 8px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .2s ease-out;
+}
+
+.btn:hover {
+    background-color: rgb(234, 236, 240);
+    transition: all .2s ease-in;
+}
+
+#fotologo {
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+#homecontainer {
+    margin-top: 30px;
+}
+
+/* disc */
+
+#disc {
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.8;
+    width: 300px;
+    height: 300px;
+    margin-top: 10%;
+}
+
+#disc {
+    background-image: -moz-radial-gradient(
+        45px 45px 45deg, circle cover, grey 0%, black 100%, black 95%);
+    background-image: -webkit-radial-gradient(
+        45px 45px, circle cover, grey, black);
+    background-image: radial-gradient(
+        45px 45px 45deg, circle cover, grey 0%, black 100%, black 95%);
+}
+
+@keyframes revolutie {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#disc {
+    margin-bottom: 300px;
+    animation-name: revolutie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#center {
+    width: 75px;
+    height: 75px;
+    background: orange;
+    position: relative;
+    top: 37%;
+    left: 37%;
+    display: block;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+}
+
+/* Footer */
+
+#footercontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black; 
+    color: white; 
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.itemcontainerimage {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 13px;
+    text-align: center;
+}
+
+.itemcontainertext {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Formulier */
+
+/* help: https://www.youtube.com/watch?v=okbByPWS1Xc*/
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.field { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#formcontainerflex {
+    display: flex;
+    justify-content: center;
+}
+
+#forumcontainerflex form .field {
+    margin: 20px 0 12px 0;
+}
+
+form .field .subfield {
+    width: calc(100% / 2 - 20px);
+}
+
+.field .fieldname {
+    display: block;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.field .subfield input { /* overige box */
+    height: 40px;
+    max-width: 250px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 15px;
+    padding-left: 15px;
+    transition: all .2s ease;
+    margin: 10px;
+    
+    border: 2px solid transparent;
+    margin: -1px;
+}
+
+.field .subfield input:focus {
+    border: 2px solid;
+    border-color: blue;
+    margin: -1px;
+}
+
+.field .subfield input:valid {
+    border: 2px solid;
+    border-color: #00a96b;
+    margin: -1px;
+}
+
+.formbutton input {
+    background-color: #00a96b;
+    border: 0px;
+    height: 30px;
+    color: white;
+    margin-top: 50px;
+
+    display: inline-block;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: .2s;
+}
+
+.formbutton input:hover {
+    background-color: #02935e; 
+}
+
+.field .subfield #concert { /* woonplaats box */
+    height: 44px;
+    max-width: 270px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 15px;
+    padding-left: 15px;
+    transition: all .2s ease;
+    margin: 10px;
+    
+    border: 2px solid transparent;
+    margin: -1px;
+}
+
+.formbutton {
+    width: 100%;
+}
+
+select:focus {
+    box-shadow: 0 0 1px 1px blue;
+    margin: -1px;
+}
+
+/* subfield gender */
+
+#subfieldgender .fieldname {
+    margin-top: 20px;
+}
+
+form #subfieldgender .category {
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#subfieldgender .category label {
+    display: flex;
+}
+
+#subfieldgender .category .dot {
+    height: 10px;
+    width: 10px;
+    background: rgb(201, 201, 201);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid grey;
+    transition: all .2s ease;
+}
+
+#dot-1:checked ~ .category label .one, 
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+
+    background-color: #02935e;
+    border: 2px solid rgb(58, 58, 58);
+} 
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* opmerking */
+
+textarea {
+    max-width: 280px;
+    min-width: 250px;
+    width: 100%;
+
+    max-height: 160px;
+    min-height: 130px;
+
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+/* Abonnementen */
+
+form #abonnementen .fieldname {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form #abonnementen .category {
+    width: 400px;
+    height: 50px;
+}
+
+#concertagendalabel {
+    width: 100%;
+}
+
+/* Range */
+
+form #albumrank .fieldname {
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+/* CONTACT */
+
+#contactbox #contactcontainer .field .subfield {
+    width: 100%;
+}
+
+#contactbox {
+    display: flex;
+    justify-content: center;
+}
+
+#contactcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.contactbutton input {
+    background-color: #00a96b;
+    border: 0px;
+    height: 30px;
+    color: white;
+    margin-top: 50px;
+
+    display: inline-block;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: .2s;
+}
+
+.contactbutton input:hover {
+    background-color: #02935e; 
+}
+
+.contactbutton {
+    width: 100%;
+}
+
+/* PLAYLIST */
+
+#playlistflex .coverfield img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+#playlistflex {
+    display: flex;
+    justify-content: center;
+}
+
+#playlistcontainer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px;
+    width: 100vh;
+}
+
+.coverfield {
+    margin-top: 30px;
+    width: 250px;
+    height: 350px;
+}
+
+.covername {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.coverinfo {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+#player {
+    width: 250px;
+}

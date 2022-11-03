@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title>Radio Gaga</title>
+
+        <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="tags"/>
+        <link rel="icon" type="favicon" href="img/favicon.png">
+
+        <style>
+            body {
+                overflow-x: hidden;
+            }
+
+            #blankfield {
+                margin: 500px;
+            }
+        </style>
+    </head>
+
+    <body>   
+
+        <div id="mainsection">
+            <div id="containertabs">
+    
+                <a href="index.html"><img id="fotologo" src="img/radiogagalogo.jpg" height="120"></a>
+                
+                <a class="btn" href="index.html">Home</a>
+                <a class="btn" href="playlist.html">Playlist</a>
+                <a class="btn" href="formulier.html">Formulier</a>
+                <a class="btn" href="contact.html">Contact</a>
+                
+            </div>
+    
+            <div id="homecontainer">
+                <h1>Contact</h1>
+
+                <p>Heeft u een vraag of feedback voor ons?
+                    <br> Hiervoor kunt u dit formulier invullen of contacteer via: <br>
+                    radiogaga@contact.nl.
+                </p> 
+
+                <p>Wij horen graag van u!</p>
+            </div>
+
+            <div id="contactbox">
+                <div id="contactcontainer">
+                    <div class="field">
+                        <div class="subfield">
+                            <span class="fieldname">Naam</span>
+                            <input pattern="[a-zA-Z ]*" minlength="3" maxlength="20" type="text" placeholder="Alexander" required/>
+                        </div>
+
+                        <div class="subfield">
+                            <span class="fieldname">E-mail</span>
+                            <input type="email" maxlength="20" placeholder="voorbeeld@gmail.com" required/>
+                        </div>
+
+                        <div class="subfield">
+                            <span class="fieldname">Mobiel</span>
+                            <input pattern="[0-9]+([-\,][0-9]+)?" minlength="11" maxlength="11" type="text" placeholder="06-12345678" required/>
+                        </div>
+
+                        <div class="subfield">
+                            <div id="opmerkingcontainer">
+                                <span class="fieldname">Opmerking</span>
+                                <textarea required id="opmerking" placeholder="Type hier uw vraag en/of feedback"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="contactbutton">
+                            <input type="submit" value="Stuur">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div id="blankfield"></div>
+
+            <footer>
+                <div id="footercontainer">
+                    <div class="itemcontainerimage">
+                        <a href="#"><img src="img/twittericon.png" height="50"></a>
+                        <a href="#"><img src="img/fb.png" height="45"></a>
+                        <a href="#"><img src="img/yt.png" height="50"></a>
+                    </div>
+
+                    <div class="itemcontainertext">
+                        <p>Copyright &copy; 2022 Alle rechten voorbehouden.</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

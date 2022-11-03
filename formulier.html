@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title>Radio Gaga</title>
+
+        <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="tags"/>
+        <link rel="icon" type="favicon" href="img/favicon.png">
+
+        <style>
+            body {
+                overflow-x: hidden;
+            }
+
+            #blankfield {
+                margin: 300px;
+            }
+        </style>
+    </head>
+
+    <body>   
+
+        <div id="mainsection">
+            <div id="containertabs">
+    
+                <a href="index.html"><img id="fotologo" src="img/radiogagalogo.jpg" height="120"></a>
+                
+                <a class="btn" href="index.html">Home</a>
+                <a class="btn" href="playlist.html">Playlist</a>
+                <a class="btn" href="formulier.html">Formulier</a>
+                <a class="btn" href="contact.html">Contact</a>
+                
+            </div>
+    
+            <div id="homecontainer">
+                <h1>Formulier</h1>
+
+                <p>Bestel hier uw kaarten</p>
+            </div>
+
+            <div id="formcontainerflex">
+                <div class="formcontainer">
+                    <form action="#">
+                        <div class="field">
+    
+                            <div class="subfield">
+                                <span class="fieldname">Volledige Naam</span>
+                                <input pattern="[a-zA-Z ]*" minlength="3" maxlength="20" type="text" placeholder="John Doe" required/>
+                            </div>
+    
+                            <div class="subfield">
+                                <span class="fieldname">E-mail</span>
+                                <input type="email" maxlength="20" placeholder="voorbeeld@gmail.com" required/>
+                            </div>
+    
+                            <div class="subfield">
+                                <span class="fieldname">Mobiel</span>
+                                <input pattern="[0-9]+([-\,][0-9]+)?" minlength="11" maxlength="11" type="text" placeholder="06-12345678" required/>
+                            </div>
+
+                            <div class="subfield">
+                                <span class="fieldname">Woonplaats</span>
+                                <input type="text" minlength="3" placeholder="Amsterdam" required/>
+                            </div>
+
+                            <div class="subfield">
+                                <span class="fieldname">Geboortjedatum</span>
+                                <input type="date" placeholder="-" required/>
+                            </div>
+                            
+                            <div class="subfield">
+                                <span class="fieldname">Concert</span>
+
+                                <select id="concert" required>
+                                    <option value="manu">Manu Chau</option>
+                                    <option value="evanescence">Evanescence</option>
+                                    <option value="sade">Sade</option>
+                                </select>
+                            </div>
+
+                            <div id="subfieldgender">
+                                <span class="fieldname">Geslacht</span>
+                                <input type="radio" name="gender" id="dot-1">
+                                <input type="radio" name="gender" id="dot-2">
+                                <input type="radio" name="gender" id="dot-3">
+
+                                <div class="category">
+                                    <label for="dot-1">
+                                        <span class="dot one"></span>
+                                        <span class="gender">Man</span>
+                                    </label>
+
+                                    <label for="dot-2">
+                                        <span class="dot two"></span>
+                                        <span class="gender">Vrouw</span>
+                                    </label>
+
+                                    <label for="dot-3">
+                                        <span class="dot three"></span>
+                                        <span class="gender">Anders</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="subfield">
+                                <div id="opmerkingcontainer">
+                                    <span class="fieldname">Opmerking</span>
+                                    <textarea id="opmerking" placeholder="Type hier een opmerking (optioneel)"></textarea>
+                                </div>
+                            </div>
+
+                            <div id="abonnementen">
+                                <span class="fieldname">Abonnementen</span>
+
+                                <div class="category">
+                                    <div id="nieuwsbrieflabel">
+                                        <span class="nieuwsbrief">Nieuwsbrief</span>
+                                        <input type="checkbox">
+                                    </div>
+
+                                    <div id="concertagendalabel">
+                                        <span class="concertagenda">Concertagenda</span>
+                                        <input type="checkbox">
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div id="albumrank">
+                                <span class="fieldname">Album Ranking</span>
+
+                                <div id="category">
+                                    <input type="range">
+                                </div>
+                            </div>
+
+
+                            <div class="formbutton">
+                                <input type="submit" value="Verzend">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="blankfield"></div>
+
+            <footer>
+                <div id="footercontainer">
+                    <div class="itemcontainerimage">
+                        <a href="#"><img src="img/twittericon.png" height="50"></a>
+                        <a href="#"><img src="img/fb.png" height="45"></a>
+                        <a href="#"><img src="img/yt.png" height="50"></a>
+                    </div>
+
+                    <div class="itemcontainertext">
+                        <p>Copyright &copy; 2022 Alle rechten voorbehouden.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>        
+    </body>
+</html>
